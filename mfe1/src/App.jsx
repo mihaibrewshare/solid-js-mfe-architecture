@@ -1,5 +1,5 @@
 import { render } from "solid-js/web";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import "./index.css";
 
 const App = () => (
