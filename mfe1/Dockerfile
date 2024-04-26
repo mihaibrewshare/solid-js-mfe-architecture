@@ -10,6 +10,7 @@ COPY . .
 
 RUN npm run build
 
+# mfe1 port
 EXPOSE 3001
 
 CMD ["npm", "start"]
