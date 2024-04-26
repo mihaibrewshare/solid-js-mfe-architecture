@@ -1,8 +1,9 @@
 .navbar {
     display: flex;
     justify-content: center;
-    border: 2px dotted lightgray;
+    border: 2px dotted black;
     border-radius: 15px;
     padding: 20px;
-    background-color: lightyellow;
+    margin: 20px;
+    background-color: lightpink;
 }

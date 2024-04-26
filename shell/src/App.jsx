@@ -1,13 +1,11 @@
 import { render } from "solid-js/web";
-
+import Navbar from "mfe1/Navbar";
 import "./index.css";
 
 const App = () => (
   <div class="container">
-    <div>Name: shell</div>
-    <div>Framework: solid-js</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
+    <div class="shell-header">Shell</div>
+    <Navbar />
   </div>
 );
 render(App, document.getElementById("app"));
