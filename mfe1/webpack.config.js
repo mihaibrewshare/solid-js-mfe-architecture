@@ -1,6 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-const Dotenv = require('dotenv-webpack');
+const Dotenv = require("dotenv-webpack");
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
@@ -45,7 +45,9 @@ module.exports = (_, argv) => ({
       name: "mfe1",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./Navbar": "./src/Navbar.jsx",
+      },
       shared: {
         ...deps,
         "solid-js": {
@@ -57,6 +59,6 @@ module.exports = (_, argv) => ({
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     }),
-    new Dotenv()
+    new Dotenv(),
   ],
 });
