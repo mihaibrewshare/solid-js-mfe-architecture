@@ -10,7 +10,9 @@ COPY . .
 
 RUN npm run build
 
+RUN npm install -g serve
+
 # mfe2 port
 EXPOSE 3002
 
-CMD ["npm", "start"]
+CMD ["serve", "-s", "dist", "-l", "3002"]
