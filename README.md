@@ -1,8 +1,8 @@
-# Dockerized Solid.js Microfrontends: Simplifying Scalable Web Applications
+# Dockerized Solid.js Micro-Frontends: Simplifying Scalable Web Applications
 
 ## Overview
 
-This repository showcases Solid.js microfrontends containerized with Docker, simplifying the development and deployment of scalable web applications. 
+This repository showcases Solid.js micro-frontends containerized with Docker, simplifying the development and deployment of scalable web applications. 
 
 ## Installation
 
